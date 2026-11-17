@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Mi Entrenamiento — Calistenia suave y movilidad</title>
+    <meta
+      name="description"
+      content="PWA privada de calistenia suave, temporizador por intervalos, guías visuales y registro conservador de progreso y molestias."
+    />
+    <meta property="og:title" content="Mi Entrenamiento" />
+    <meta
+      property="og:description"
+      content="Seguimiento privado de calistenia suave, movilidad y bienestar diario."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1E4D3B" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0F1412" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Entrenar" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F7F7F5] text-[#17201B] dark:bg-[#0F1412] dark:text-[#ECF1ED] antialiased selection:bg-[#1E4D3B]/15">
+    <div id="root">
+      <div
+        id="boot-splash"
+        style="min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;padding:24px;"
+      >
+        <div
+          style="width:52px;height:52px;border-radius:16px;background:#1E4D3B;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;letter-spacing:-0.02em;"
+        >
+          ME
+        </div>
+        <div style="font-size:16px;font-weight:600;letter-spacing:-0.01em;">Mi Entrenamiento</div>
+        <div style="font-size:13px;opacity:0.65;">Preparando tu espacio de práctica…</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

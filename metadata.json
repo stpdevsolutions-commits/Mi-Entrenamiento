@@ -1,0 +1,6 @@
+{
+  "name": "Mi Entrenamiento",
+  "description": "PWA privada de calistenia suave, temporizador por intervalos, guías visuales y registro conservador de progreso y molestias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

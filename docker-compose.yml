@@ -1,0 +1,24 @@
+services:
+  mi-entrenamiento:
+    build: .
+    container_name: mi-entrenamiento
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      DATABASE_PATH: /data/mi-entrenamiento.db
+      # Cambia SESSION_SECRET por una cadena larga y aleatoria en producción:
+      SESSION_SECRET: "${SESSION_SECRET:-cambia-esta-clave-por-una-larga-y-aleatoria-en-produccion}"
+      # Pon ALLOW_REGISTRATION=false después de crear tu cuenta personal:
+      ALLOW_REGISTRATION: "${ALLOW_REGISTRATION:-true}"
+      SINGLE_USER_MODE: "${SINGLE_USER_MODE:-true}"
+      SEED_DEMO_DATA: "${SEED_DEMO_DATA:-true}"
+      TRUST_PROXY: "true"
+      # IA opcional desactivada por defecto:
+      AI_ENABLED: "${AI_ENABLED:-false}"
+      GEMINI_API_KEY: "${GEMINI_API_KEY:-}"
+      SAVE_AI_HISTORY: "false"
+    volumes:
+      - ./data:/data
